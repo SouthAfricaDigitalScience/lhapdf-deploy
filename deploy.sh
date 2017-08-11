@@ -45,3 +45,6 @@ echo "Checking module availability "
 module  avail ${NAME}
 echo "Checking module "
 module add ${NAME}/${VERSION}-gcc-${GCC_VERSION}-boost-${BOOST_VERSION}
+echo "attempting install of PDF set"
+lhapdf install MMHT2014nlo68cl
+lhapdf install MMHT2014lo68cl
