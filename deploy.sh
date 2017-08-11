@@ -36,6 +36,7 @@ module add  python/2.7.13-gcc-${GCC_VERSION}
 setenv LHAPDF_VERSION       $VERSION
 setenv LHAPDF_DIR           $::env(CVMFS_DIR)/$::env(SITE)/$::env(OS)/$::env(ARCH)/$NAME/$VERSION
 prepend-path LD_LIBRARY_PATH   $::env(LHAPDF_DIR)/lib
+prepend-path PATH        $::env(LHAPDF_DIR)/bin
 setenv CFLAGS            "-I$::env(LHAPDF_DIR)/include $CFLAGS"
 setenv LDFLAGS           "-L$::env(LHAPDF_DIR)/lib $LDFLAGS"
 MODULE_FILE
