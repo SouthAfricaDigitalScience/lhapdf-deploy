@@ -30,7 +30,7 @@ proc ModulesHelp { } {
 
 module-whatis   "$NAME $VERSION : See https://github.com/SouthAfricaDigitalScience/gmp-deploy"
 module add gcc/${GCC_VERSION}
-module add openmpi/${OPENMPI_VERSION}
+module add openmpi/${OPENMPI_VERSION}-gcc-${GCC_VERSION}
 module add boost/1.63.0-gcc-${GCC_VERSION}-mpi-${OPENMPI_VERSION}
 module add  python/2.7.13-gcc-${GCC_VERSION}
 setenv LHAPDF_VERSION       $VERSION
